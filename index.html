@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>myPortfolio</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+  <link rel="stylesheet" href="libs/font-awesome/css/font-awesome.min.css">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body onload="typeWriter()">
+  <div id="mobile-menu-open" class="shadow-large">
+    <i class="fa fa-bars" aria-hidden="true"></i>
+  </div>
+
+
+  <header>
+    <div id="mobile-menu-close">
+      <span>Close</span> <i class="fa fa-times" aria-hidden="true"></i>
+    </div>
+    <ul id="menu" class="shadow">
+      <li>
+        <a href="#about">About</a>
+      </li>
+
+      <li>
+        <a href="#projects">Projects</a>
+      </li>
+      <li>
+        <a href="#skills">Skills</a>
+      </li>
+      <li>
+        <a href="#contact">Contact</a>
+      </li>
+    </ul>
+  </header>
+
+
+  <div id="lead">
+    <div id="lead-content">
+      <h1 id="write"></h1><br><br>
+      <h2>Web Developer</h2><br>
+      <!-- <a href="#" class="btn-rounded-white" download target="_blank">Download Resume</a> -->
+    </div>
+    <!-- End #lead-content -->
+
+    <div id="lead-overlay"></div>
+
+    <div id="lead-down">
+      <span>
+        <i class="fa fa-chevron-down" aria-hidden="true"></i>
+      </span>
+    </div>
+
+  </div>
+
+
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h2 class="heading">About Me</h2>
+        </div>
+        <div class="col-md-8">
+          <p>
+          A motivated, versatile and lateral thinking Software Developer, with a keen interest in building secure applications, currently seeking a web developer position that can aid me enhance and utilize my web programming skills.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="projects" class="background-alt">
+    <h2 class="heading">Projects</h2>
+    <div class="container">
+      <div class="row">
+
+        <div class="project shadow-small">
+          <div class="project-image">
+            <img src="images/insta.png" />
+          </div>
+          <!-- End .project-image -->
+
+          <div class="project-info">
+            <h3 style="color: black"><strong>Instagram<strong></h3>
+            <p style="color: black">
+              A clone of the website for the popular photo app Instagram.
+            </p>
+            <a href="https://instabena.herokuapp.com/">View Project</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+
+
+
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="images/gitsearch.png" />
+          </div>
+          <!-- End .project-image -->
+          <div class="project-info">
+            <h3><strong>Github-search<strong></h3>
+            <p style="color: black">
+              An Angular application that allows a user <br> to search for GitHub users and their repositories.
+            </p>
+            <a href="https://nyagajr.github.io/githubsearch/">View Project</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
+
+        <div class="project shadow-large">
+          <div class="project-image">
+            <img src="images/news.png" />
+          </div>
+          <!-- End .project-image -->
+          <div class="project-info">
+            <h3 style="color: black"><strong>NewsHighlights<strong></h3>
+            <p style="color: black">
+              A Flask application that helps the user preview news articles from various sources.
+            </p>
+            <a href="https://bennews.herokuapp.com/">View Project</a>
+          </div>
+          <!-- End .project-info -->
+        </div>
+        <!-- End .project -->
+
+
+      </div>
+    </div>
+  </div>
+  <!-- End #projects -->
+
+  <div id="skills">
+    <h2 class="heading">Skills</h2>
+    <ul>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5"><img src="images/html5.png" style="width:100px; height:100px;"></a>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3"><img src="images/css.png" style="width:100px; height:100px;"></a>
+
+      <a href="https://www.javascript.com/"><img src="images/jas.png" style="width:100px; height:100px;"></a>
+      <a href="https://www.python.org/"><img src="images/python.png" style="width:100px; height:100px;"></a>
+
+
+      <a href="http://flask.pocoo.org/"><img src="images/flask.png" style="width:100px; height:100px;"></a>
+      <a href="https://docs.djangoproject.com/en/2.1/"><img src="images/django2.png" style="width:100px; height:100px;"></a>
+
+      <a href="https://angular.io/"><img src="images/angular.png" style="width:80px; height:80px;"></a>
+
+
+    </ul>
+  </div>
+  <!-- End #skills -->
+
+  <div id="contact">
+    <h2>Need to say hi?</h2>
+    <div id="contact-form">
+      <form method="POST" action="https://formspree.io/nyagaben123@gmail.com">
+        <input type="hidden" name="_subject" value="Contact request from personal website" />
+        <input type="email" name="_replyto" placeholder="Email me" required>
+        <input type="text" name="_gotcha" style="display:none" />
+        <textarea name="message" placeholder="Say hello..." required></textarea>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <!-- End #contact-form -->
+  </div>
+  <!-- End #contact -->
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-5 copyright">
+          <p>
+            &copy; 2019 | Benson Nyaga
+          </p>
+        </div>
+        <div class="col-sm-2 top">
+          <span id="to-top">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+          </span>
+        </div>
+        <div class="col-sm-5 social">
+          <ul>
+            <li>
+              <a href="https://github.com/nyagajr" target="_blank"><i class="fa fa-github" aria-hidden="true"> nyagajr</i></a>
+            </li>
+            <!-- <li>
+                            <a href="https://stackoverflow.com/" target="_blank"><i class="fa fa-stack-overflow" aria-hidden="true"></i></a>
+                        </li> -->
+            <li>
+              <a href="https://www.linkedin.com/in/benson-muchoki-nyaga/" target="_blank"><i class="fa fa-linkedin" aria-hidden="true"> benson-muchoki-nyaga</i></a>
+            </li>
+            <!-- <li>
+              <a href="#" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+            </li>
+            <li>
+              <a href="https://twitter.com/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            </li> -->
+            <!-- <li>
+                            <a href="https://plus.google.com/" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        </li>  -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End footer -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/scripts.min.js"></script>
+  <script>
+    var i = 0;
+    var h1 = 'Benson Nyaga';
+    var speed = 230;
+
+    function typeWriter() {
+      if (i < h1.length) {
+        document.getElementById("write").innerHTML += h1.charAt(i);
+        i++;
+        setTimeout(typeWriter, speed);
+      }
+    }
+  </script>
+</body>
+
+</html>
